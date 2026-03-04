@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Surya Putra | Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --base-color: #1A05A2;
+            --primary-color: #8F0177;
+            --secondary-color: #DE1A58;
+            --accent-color: #F67D31;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--base-color);
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Customization */
+        .navbar {
+            background-color: rgba(26, 5, 162, 0.9) !important;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 150px 0 100px;
+            background: linear-gradient(135deg, var(--base-color) 0%, var(--primary-color) 100%);
+        }
+
+        .profile-img {
+            border: 5px solid var(--accent-color);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        section { padding: 80px 0; }
+        
+        .section-title {
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--primary-color);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: var(--primary-color);
+            transform: translateY(-10px);
+        }
+
+        /* Footer & Contact */
+        .contact-box {
+            background-color: var(--primary-color);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-accent:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { color: var(--secondary-color); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">STEVEN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-content="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Background</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teaching">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center">
+        <div class="container" data-aos="fade-up">
+            <img src="profile.jpg" alt="Steven Surya Putra" class="profile-img mb-4">
+            <h1 class="display-4 fw-bold">Steven Surya Putra</h1>
+            <p class="lead">Mahasiswa Teknik Informatika @ Universitas Ma Chung</p>
+            <a href="#contact" class="btn btn-accent btn-lg mt-3">Mari Terhubung</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row" data-aos="fade-right">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Background</h2>
+                    <p>Saya adalah mahasiswa Teknik Informatika di Universitas Ma Chung yang memiliki ketertarikan mendalam pada pengembangan teknologi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card h-100 p-4">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="fw-bold" style="color: var(--accent-color);">BPH UKM KSPM</h5>
+                    </div>
+                    <p class="small text-white-50">Univ. Ma Chung | 2024 - 2025</p>
+                    <p>Bertanggung jawab dalam perencanaan strategis organisasi dan edukasi investasi pasar modal bagi mahasiswa Universitas Ma Chung.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card h-100 p-4">
+                    <h5 class="fw-bold" style="color: var(--accent-color);">BPH Program Kerja</h5>
+                    <p class="small text-white-50">Kepanitiaan Kampus</p>
+                    <p>Mengelola manajemen operasional, koordinasi antar divisi, dan memastikan eksekusi program kerja berjalan efektif dan tepat waktu.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="portfolio" style="background: rgba(0,0,0,0.2); padding: 100px 0;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title" style="font-weight: 700; position: relative; display: inline-block;">
+                Portofolio
+                <span style="position: absolute; width: 60%; height: 5px; background: var(--accent-color); bottom: -12px; left: 0;"></span>
+            </h2>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="business-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 40px; height: 100%; transition: all 0.4s ease; border-top: 5px solid var(--accent-color);">
+                    <div class="icon-circle" style="width: 70px; height: 70px; background: rgba(246, 125, 49, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--accent-color); font-size: 30px;">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="fw-bold mb-3">Agent Property</h3>
+                    <p class="text-white-50">Menyediakan jasa konsultasi dan perantara transaksi real estate dengan fokus pada lokasi strategis dan kepastian legalitas bagi pembeli maupun investor.</p>
+                    <hr style="border-color: var(--primary-color);">
+                    <ul class="list-unstyled small">
+                
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="business-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 40px; height: 100%; transition: all 0.4s ease; border-top: 5px solid var(--primary-color);">
+                    <div class="icon-circle" style="width: 70px; height: 70px; background: rgba(143, 1, 119, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--primary-color); font-size: 30px;">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="fw-bold mb-3">Trader</h3>
+                    <p class="text-white-50">Menganalisis pergerakan harga pasar modal melalui pendekatan teknikal dan fundamental untuk menghasilkan keuntungan yang konsisten dan terukur.</p>
+                    <hr style="border-color: var(--primary-color);">
+                    <ul class="list-unstyled small">
+                
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="business-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 40px; height: 100%; transition: all 0.4s ease; border-top: 5px solid var(--secondary-color);">
+                    <div class="icon-circle" style="width: 70px; height: 70px; background: rgba(222, 26, 88, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; color: var(--secondary-color); font-size: 30px;">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="fw-bold mb-3">Coffee Supplier</h3>
+                    <p class="text-white-50">Menyuplai biji kopi pilihan berkualitas tinggi langsung dari petani lokal untuk memenuhi kebutuhan cafe, resto, dan penikmat kopi secara luas.</p>
+                    <hr style="border-color: var(--primary-color);">
+                    <ul class="list-unstyled small">
+             
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-box" data-aos="zoom-in">
+                <h2 class="text-center mb-5">Kontak Professional</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Informasi Kontak:</h5>
+                        <p>Email: <strong>stevensuryaputra@gmail.com</strong></p>
+                        <p>GitHub: <a href="https://github.com/stevensuryaputra-ops" target="_blank" class="text-white">stevensuryaputra-ops</a></p>
+                        <p>LinkedIn: <a href="http://www.linkedin.com/in/steven-steven-5b0364378" target="_blank" class="text-white">Steven Surya Putra</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Link Terkait:</h5>
+                        <ul>
+                            <li><a href="https://machung.ac.id/" target="_blank" class="text-white">Universitas Ma Chung</a></li>
+                            <li><a href="https://lockey-irawan.github.io/" target="_blank" class="text-white">Project Manager</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 border-top">
+        <p>&copy; 2026 Steven Surya Putra - Built with Bootstrap & AI.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animation on Scroll
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
